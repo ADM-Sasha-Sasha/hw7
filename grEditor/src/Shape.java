@@ -48,7 +48,6 @@ class Shape {
         System.out.println(grf3.getName());
 
         System.out.println(grf4.getName());
-
     }
 
 }
