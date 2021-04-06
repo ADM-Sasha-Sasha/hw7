@@ -1,83 +1,81 @@
-import javax.lang.model.element.Name;
+import java.util.Arrays;
 
 public abstract class Shape {
-    public abstract String name();
-
+    public abstract String getName();
 
     class Circle extends Shape {
-        public String Name;
+        private String name;
 
-        public String getName() {
-            return Name;
+        public void setName(String name) {
+            this.name = name;
         }
 
         @Override
-        public String name() {
-            //System.out.println("Circle");
-            return "Circle";
+        public String getName() {
+            return name;
         }
     }
 
     class Quad extends Shape {
-        public String Name;
+        private String name;
 
-        public String getName() {
-            return Name;
+        public void setName(String name) {
+            this.name = name;
         }
 
         @Override
-        public String name() {
-            //System.out.println("Quad");
-            return "Quad";
+        public String getName() {
+            return name;
         }
     }
 
     class Triangle extends Shape {
-        public String Name;
+        public String name;
 
-        public String getName() {
-            return Name;
+        public void setName(String name) {
+            this.name = name;
         }
 
         @Override
-        public String name() {
-            //System.out.println("Tringle");
-            return "Tringle";
+        public String getName() {
+            return name;
         }
     }
 
     class Ellipse extends Shape {
-        public String Name;
+        public String name;
 
-        public String getName() {
-            return Name;
+        public void setName(String name) {
+            this.name = name;
         }
 
         @Override
-        public String name() {
-            //System.out.println("Ellipse");
-            return "Ellipse";
+        public String getName() {
+            return name;
         }
     }
 
     class Rectangle extends Shape {
-        public String Name;
+        public String name;
 
-        public String getName() {
-            return Name;
+        public void setName(String name) {
+            this.name = name;
         }
 
         @Override
-        public String name() {
-            //System.out.println("Rectangle");
-            return "Rectangle";
+        public String getName() {
+            return null;
         }
     }
 
-    public Shape() {
+    public interface Print {
+        public void printName();
     }
 
-    public static void main(String[] args) {
-        System.out.println();
+    class NamePrinter {
+        public static void main(String[] args) {
+            System.out.println(Arrays.toString(new String[]{"Circle", "Quad", "Triangle", "Ellipse", "Rectangle"}));
+        }
     }
 }
+
