@@ -1,55 +1,83 @@
-import org.w3c.dom.ls.LSOutput;
+import javax.lang.model.element.Name;
 
-class Shape {
-    private String name;
+public abstract class Shape {
+    public abstract String name();
 
-    public String getName() {
-        return name;
+
+    class Circle extends Shape {
+        public String Name;
+
+        public String getName() {
+            return Name;
+        }
+
+        @Override
+        public String name() {
+            //System.out.println("Circle");
+            return "Circle";
+        }
     }
 
-    public void setName(String name) {
-        this.name = name;
+    class Quad extends Shape {
+        public String Name;
+
+        public String getName() {
+            return Name;
+        }
+
+        @Override
+        public String name() {
+            //System.out.println("Quad");
+            return "Quad";
+        }
     }
 
-    private class Circle extends Shape {
+    class Triangle extends Shape {
+        public String Name;
+
+        public String getName() {
+            return Name;
+        }
+
+        @Override
+        public String name() {
+            //System.out.println("Tringle");
+            return "Tringle";
+        }
     }
 
-    private class Quad extends Shape {
+    class Ellipse extends Shape {
+        public String Name;
+
+        public String getName() {
+            return Name;
+        }
+
+        @Override
+        public String name() {
+            //System.out.println("Ellipse");
+            return "Ellipse";
+        }
     }
 
-    private class Triangle extends Shape {
+    class Rectangle extends Shape {
+        public String Name;
+
+        public String getName() {
+            return Name;
+        }
+
+        @Override
+        public String name() {
+            //System.out.println("Rectangle");
+            return "Rectangle";
+        }
     }
 
-    private class Ellipse extends Shape {
+    public Shape() {
     }
-
-    private class Rectangle extends Shape {
-
-    }
-
 
     public static void main(String[] args) {
-        Shape grf = new Shape();
-        Shape grf1 = new Shape();
-        Shape grf2 = new Shape();
-        Shape grf3 = new Shape();
-        Shape grf4 = new Shape();
-
-        grf.setName("Circle");
-        grf1.setName("Quad");
-        grf2.setName("Triangle");
-        grf3.setName("Ellipse");
-        grf4.setName("Rectangle");
-
-        System.out.println(grf.getName());
-
-        System.out.println(grf1.getName());
-
-        System.out.println(grf2.getName());
-
-        System.out.println(grf3.getName());
-
-        System.out.println(grf4.getName());
+        System.out.println();
     }
-
 }
