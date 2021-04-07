@@ -1,15 +1,12 @@
-import java.util.Arrays;
-
 public abstract class Shape {
+    private String Shape;
     public abstract String getName();
 
     class Circle extends Shape {
         private String name;
-
         public void setName(String name) {
             this.name = name;
         }
-
         @Override
         public String getName() {
             return name;
@@ -18,11 +15,9 @@ public abstract class Shape {
 
     class Quad extends Shape {
         private String name;
-
         public void setName(String name) {
             this.name = name;
         }
-
         @Override
         public String getName() {
             return name;
@@ -31,11 +26,9 @@ public abstract class Shape {
 
     class Triangle extends Shape {
         public String name;
-
         public void setName(String name) {
             this.name = name;
         }
-
         @Override
         public String getName() {
             return name;
@@ -48,7 +41,6 @@ public abstract class Shape {
         public void setName(String name) {
             this.name = name;
         }
-
         @Override
         public String getName() {
             return name;
@@ -61,21 +53,31 @@ public abstract class Shape {
         public void setName(String name) {
             this.name = name;
         }
-
         @Override
         public String getName() {
             return null;
         }
     }
 
-    public interface Print {
-        public void printName();
+    public Shape() {
+    }
+    public void printShape(Shape shape){
+        System.out.println("Shape name is " + getName(Shape));
+    }
+    private String getName(String shape) {
+        return getName();
     }
 
-    class NamePrinter {
+    class main {
         public static void main(String[] args) {
-            System.out.println(Arrays.toString(new String[]{"Circle", "Quad", "Triangle", "Ellipse", "Rectangle"}));
+            Shape shapeFormatter = new Shape() {
+//                @Override
+//                public String getName() {
+//                    return getName();
+//                }
+            };
         }
     }
 }
+
 
