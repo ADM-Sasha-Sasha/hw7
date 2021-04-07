@@ -8,19 +8,6 @@ public abstract class Shape implements Print {
         System.out.println("Figure: " + getName());
     }
 }
-    //public abstract String getName();
-
-//    private String Shape;
-//
-//
-//    public Shape() {
-//    }
-//    public void printShape(Shape shape){
-//        System.out.println("grEditor.Shape name is " + getName(Shape));
-//    }
-//    private String getName(String shape) {
-//        return getName();
-//    }
 
 
 
