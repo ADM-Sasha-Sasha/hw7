@@ -1,9 +1,10 @@
 package grEditor;
 
-class Circle extends Shape {
+public class Circle extends Shape {
     private String name;
-    public void setName(String name) {
-        this.name = name;
+
+    public Circle() {
+        this.name = "Circle";
     }
     @Override
     public String getName() {

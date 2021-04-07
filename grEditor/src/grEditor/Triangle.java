@@ -1,9 +1,10 @@
 package grEditor;
 
-class Triangle extends Shape {
-    public String name;
-    public void setName(String name) {
-        this.name = name;
+public class Triangle extends Shape {
+    private String name;
+
+    public Triangle() {
+        this.name = "Triangle";
     }
     @Override
     public String getName() {

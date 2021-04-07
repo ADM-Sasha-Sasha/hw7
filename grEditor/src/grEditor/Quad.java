@@ -1,9 +1,10 @@
 package grEditor;
 
-class Quad extends Shape {
+public class Quad extends Shape {
     private String name;
-    public void setName(String name) {
-        this.name = name;
+
+    public Quad() {
+        this.name = "Quad";
     }
     @Override
     public String getName() {

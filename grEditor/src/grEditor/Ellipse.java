@@ -1,10 +1,10 @@
 package grEditor;
 
-class Ellipse extends Shape {
-    public String name;
+public class Ellipse extends Shape {
+    private String name;
 
-    public void setName(String name) {
-        this.name = name;
+    public Ellipse() {
+        this.name = "Ellipse";
     }
     @Override
     public String getName() {

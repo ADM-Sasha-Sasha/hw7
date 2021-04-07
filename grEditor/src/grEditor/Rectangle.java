@@ -1,13 +1,13 @@
 package grEditor;
 
-class Rectangle extends Shape {
-    public String name;
+public class Rectangle extends Shape {
+    private String name;
 
-    public void setName(String name) {
-        this.name = name;
+    public Rectangle() {
+        this.name = "Rectangle";
     }
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 }
